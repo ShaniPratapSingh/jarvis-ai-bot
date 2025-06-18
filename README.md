@@ -41,3 +41,43 @@ This project solves the challenge of fast-moving online auctions, where users of
 ```bash
 git clone https://github.com/ShaniPratapSingh/jarvis-ai-bot.git
 cd jarvis-ai-bot
+2. Create and activate virtual environment
+python -m venv .venv
+source .venv/bin/activate      # Mac/Linux
+# .venv\Scripts\activate.bat   # Windows
+3. Install all dependencies
+pip install -r requirements.txt
+4. Start the auction backend
+cd auction_backend
+python app.py
+5. Run the Jarvis voice assistant
+cd ..
+python jarvis.py
+✅ Speak naturally! The bot will respond to auction-related voice commands.
+
+All voice commands are routed through logic and validated before submitting to the backend.
+
+📁 Project Structure
+graphql
+jarvis-ai-bot/
+├── jarvis.py                  # Voice assistant logic
+├── auction_backend/
+│   ├── app.py                 # Flask API for auction
+│   └── data.json              # Auction products & bid history
+├── requirements.txt
+├── .gitignore
+└── README.md
+🔮 Future Improvements
+Integrate OmniDimension’s webhook or call API
+
+Natural language understanding using LLMs
+
+Deployed web-based auction dashboard
+
+Support for multi-user conversations
+
+🙌 Built For
+OmniDimension Code Clash (June 17–28, 2025)
+🔗 Code Clash Info
+
+Author: Shani Pratap Singh
