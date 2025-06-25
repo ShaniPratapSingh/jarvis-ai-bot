@@ -1,83 +1,57 @@
 # jarvis-ai-bot
-# 🎤 Jarvis AI Voice Auction Agent
+# 🤖 Jarvis AI Bot
 
-A smart Python-based voice assistant that enables users to interact with a real-time auction system using natural speech. Designed for **OmniDimension Code Clash (Problem 2)**, this voice agent reads auction details aloud, accepts voice-based bids, and updates a live backend — all through simple conversations.
+Jarvis AI Bot is a **virtual assistant** inspired by Iron Man's J.A.R.V.I.S., capable of performing various tasks using voice commands. It combines speech recognition, text-to-speech, and automation to help you interact with your computer intelligently.
 
----
+## 🎯 Features
 
-## 🧩 Problem Statement
+- 🎙️ Voice command recognition
+- 🗣️ Text-to-speech response
+- 🔍 Open websites like Google, YouTube, Gmail
+- 📅 Tell date and time
+- 💻 Perform system tasks (shutdown, restart, etc.)
+- 📧 Send emails (basic setup)
+- 📝 Fetch Wikipedia summaries
+- 📂 Open applications (Notepad, Calculator, etc.)
+- 🔐 Simple conversational capability
 
-> **Voice Agent for Real-Time Auction Participation and Bidding**
+## 🛠️ Tech Stack
 
-This project solves the challenge of fast-moving online auctions, where users often miss bids due to delay. The agent connects to a simulated auction backend, fetches real-time bidding data, speaks it to the user, and accepts voice bids that are validated and recorded — all via audio interface.
+- **Python 3**
+- **SpeechRecognition**
+- **Pyttsx3** (Text-to-Speech)
+- **Wikipedia**
+- **Smtplib**
+- **Webbrowser**
+- **Datetime**
 
----
+## ⚙️ How to Run
 
-## ✨ Features
-
-- 🎙️ Voice command support (SpeechRecognition + pyttsx3)
-- 🔄 Real-time auction system with bid tracking
-- 🧠 Validates and submits voice bids (only accepts higher)
-- 🗂️ Logs all bidding activity (with optional dashboard)
-- 🌐 Flask backend with RESTful API for auction data
-
----
-
-## 📦 Tech Stack
-
-| Area         | Tools / Libraries                      |
-|--------------|----------------------------------------|
-| Voice Agent  | Python, `speechrecognition`, `pyttsx3` |
-| API Backend  | Flask                                  |
-| Integration  | `requests` for voice-to-backend calls  |
-| Optional UI  | HTML, JavaScript (Dashboard)           |
-
----
-
-## 🚀 Getting Started
-
-### 1. Clone the repository
-
+### 1. Clone the Repository
 ```bash
 git clone https://github.com/ShaniPratapSingh/jarvis-ai-bot.git
 cd jarvis-ai-bot
-2. Create and activate virtual environment
-python -m venv .venv
-source .venv/bin/activate      # Mac/Linux
-# .venv\Scripts\activate.bat   # Windows
-3. Install all dependencies
-pip install -r requirements.txt
-4. Start the auction backend
-cd auction_backend
-python app.py
-5. Run the Jarvis voice assistant
-cd ..
-python jarvis.py
-✅ Speak naturally! The bot will respond to auction-related voice commands.
 
-All voice commands are routed through logic and validated before submitting to the backend.
+🧠 What I Learned
+Handling voice input/output in Python
 
-📁 Project Structure
-graphql
-jarvis-ai-bot/
-├── jarvis.py                  # Voice assistant logic
-├── auction_backend/
-│   ├── app.py                 # Flask API for auction
-│   └── data.json              # Auction products & bid history
-├── requirements.txt
-├── .gitignore
-└── README.md
-🔮 Future Improvements
-Integrate OmniDimension’s webhook or call API
+Automating OS tasks with speech commands
 
-Natural language understanding using LLMs
+Integrating multiple Python libraries for practical AI applications
 
-Deployed web-based auction dashboard
+Designing modular voice assistants
 
-Support for multi-user conversations
+🚀 Future Scope
+GUI-based assistant with chatbot integration
 
-🙌 Built For
-OmniDimension Code Clash (June 17–28, 2025)
-🔗 Code Clash Info
+Add Natural Language Processing (NLP) for smarter interactions
 
-Author: Shani Pratap Singh
+Integrate OpenAI for advanced conversational capability
+
+Custom wake word and continuous listening
+
+🙋‍♂️ Author
+Shani Pratap Singh
+🧑‍💻 GitHub
+💼 LinkedIn
+
